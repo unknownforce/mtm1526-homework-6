@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Homework 6 - Form Validation</title>
+	<link href="css/general.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<form>
+    	<div>
+        	<label for="username">Username</label>
+            <input id="username">	<span class="status"></span>
+        </div>
+		
+		<div>
+			<label for="email">Email</label>
+			<input id="email">	<span class="email-status"></span>
+		</div>
+		
+		<div>
+			<label for="password">Password</label>
+			<input type="password" id="password">
+			<ul class="pass-reqs">
+				<li class="req-length">At least 6 Characters long</li>
+				<li class="req-low">1 lower case letter</li>
+				<li class="req-up">1 upper case letter</li>
+				<li class="req-num">1 number</li>
+				<li class="req-spec">1 special character</li>
+			</ul>
+		</div>
+	
+		<div class="countries">
+			<input type="radio" name="country" id="canada" value="canada"> Canada
+			<input type="radio" name="country"id="us" value="us"> US
+		</div>
+		
+		<div class="province">
+		
+		</div>		
+		
+		<div class="state">
+			
+		</div>	
+				
+		<div>
+			<label for="city">City</label>
+			<input id="city"> <span class="error"></span>
+		</div>
+		
+		<span class="postalzip"></span>
+		
+		
+	
+        <button type="submit">Submit</button>
+    </form>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>	
+	<script src="js/forms.js"></script>
+
+</body>
+</html>

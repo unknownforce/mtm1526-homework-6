@@ -1,0 +1,38 @@
+.status,
+.email-status,
+ {
+	font-weight:bold;
+	font-size: 1.25em;
+}
+
+.unavailable {
+	color:#F33;
+}
+
+.available {
+	color:#0F0;
+}
+
+.pass-reqs {
+	list-style-type:none;
+}
+
+.pass-reqs li:before {
+	content: "✖";
+	font-weight:bold;
+	color:#f33;
+	font-size:1.25em;	
+}
+
+.pass-reqs li.met:before {
+	content: "✔";
+	color:#0F0;
+}
+
+.error {
+	display:inline-block;	
+}
+
+p {
+	margin:0;	
+}
